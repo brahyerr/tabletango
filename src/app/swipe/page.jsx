@@ -4,9 +4,11 @@ import useState from 'react';
 import Card from "./Card.jsx";
 import styles from "./page.module.css";
 // import Results from "./results/page.jsx";
+import { GetPrompts } from "../input.jsx";
 import brokenHeart from "./public/images/broken-heart-svgrepo-com.svg";
 
 export default function Home() {
+  const prompts = GetPrompts();
   function HandleClick() {
   }
 
@@ -22,7 +24,7 @@ export default function Home() {
         {/*
         
       */}
-        <Card title={'TITLE'} />
+        <Card title={title} />
       </main>
       <footer className={styles.footer}>
         <div>Test</div>
